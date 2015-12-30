@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/estudu" version="0.0.2" viewmodes="maximized">
-    <access origin="ifttt.com" subdomains="true"/>
+    <access origin="https://ifttt.com" subdomains="true"/>
     <tizen:application id="CzM4Dnpe8w.estudu" package="CzM4Dnpe8w" required_version="2.3"/>
     <author email="mtgibbs21@gmail.com">Matt Gibbs</author>
     <content src="index.html"/>

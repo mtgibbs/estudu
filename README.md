@@ -23,3 +23,16 @@ Currently there are 4 supported options. (examples published, you can make your 
 
 ![alt tag](http://i.imgur.com/ozKdHhV.png)
 ![alt tag](http://i.imgur.com/04FGHVc.png)
+
+## Dependencies
+
+- [JQuery](https://github.com/jquery/jquery) (because I couldn't figure out how to make TAU play nice with my first project)
+- [TAU (Tizen Advanced UI)](https://developer.tizen.org/dev-guide/2.3.1/org.tizen.web.apireference/html/ui_fw_api/mobile/index.htm)
+
+## License Information
+
+MIT License
+
+Tizen Advanced UI (TAU) is covered under the [Flora License] (http://floralicense.org/license/)
+
+Vendor Icons used in the UI of this app are owned by their respective companies and probably protected by their trademarks.  // TODO: Better legalese.

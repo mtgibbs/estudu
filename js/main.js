@@ -25,16 +25,17 @@ window.onload = function() {
 		endpoint = endpoint.replace(/\{key\}/g, iftttKey);
 		console.log(endpoint);
 		
-//		$.ajax({
-//			url: endpoint,
-//			async: false,
-//			success: function() {
-//				tau.back();
-//			},
-//			error: function(jqXHR, status, err) {
-//				// TODO: do something about this
-//				console.error('Failed to call endpoint');
-//			}
-//		});
+		$.ajax({
+			url: endpoint,
+			async: false,
+			success: function(data) {
+				console.log(data);
+				tau.back();
+			},
+			error: function(jqXHR, status, err) {
+				// TODO: do something about this
+				console.error('Failed to call endpoint');
+			}
+		});
 	});
 };

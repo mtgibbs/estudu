@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/estudu" version="0.0.1" viewmodes="maximized">
+    <access origin="*" subdomains="true"></access>
+    <tizen:application id="CzM4Dnpe8w.estudu" package="CzM4Dnpe8w" required_version="2.3"/>
+    <author email="mtgibbs21@gmail.com">Matt Gibbs</author>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <icon src="icon.png"/>
+    <name>estudu</name>
+    <preference name="ifttt_key" value="YOUR_KEY_GOES_HERE" readonly="true"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:profile name="wearable"/>
+</widget>

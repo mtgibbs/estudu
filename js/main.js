@@ -27,9 +27,6 @@ window.onload = function() {
 		var page = document.getElementById("pageAnimation"),
 		listHelper,
 		elScroller;
-		
-		console.log(page.outerHTML);
-		console.log(page.innerHTML);
 
 		page.addEventListener("pagebeforeshow", function () {
 			var list;
@@ -61,20 +58,47 @@ window.onload = function() {
 	
 	$('body').on('click', 'a[data-event]', function() {
 		var event = $(this).data('event');
+        var eventName = $(this).text();
+
+        console.log(eventName);
 		
 		var endpoint = IFTTT_URL.replace(/\{event\}/g, event);
 		endpoint = endpoint.replace(/\{key\}/g, iftttKey);
-		
-		$.ajax({
-			url: endpoint,
-			async: false,
-			success: function() {
-				tau.back();
-			},
-			error: function(jqXHR, status, err) {
-				// TODO: do something about this
-				console.error('Failed to call endpoint');
-			}
+
+        $('#confirmActionName').text(eventName);
+
+		var confirmPopup = document.getElementById('confirmPopup');
+        tau.openPopup(confirmPopup);
+
+		confirmPopup.addEventListener('popupshow', function(e) {
+
+            // immediately unbind the listener
+            e.target.removeEventListener(e.type, arguments.callee);
+
+			var confirmBtn = document.getElementById('confirm');
+			confirmBtn.addEventListener('click', function(e) {
+
+                // immediately unbind the listener
+                e.target.removeEventListener(e.type, arguments.callee);
+
+				$.ajax({
+					url: endpoint,
+					async: false
+				}).done(function() {
+					// nothing here...
+				}).fail(function() {
+					console.error('Failed to call endpoint');
+
+					confirmPopup.addEventListener('popuphide', function(e) {
+
+                        // immediately unbind the listener
+                        e.target.removeEventListener(e.type, arguments.callee);
+						tau.openPopup('#errorToast');
+					});
+				}).always(function() {
+					tau.closePopup();
+				});
+			});
 		});
 	});
 };

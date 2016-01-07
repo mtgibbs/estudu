@@ -13,6 +13,23 @@
             <li><a href="#" data-event="nest_fan_15">FAN (15 MIN)</a></li>
         </ul>
     </div>
+
+    <div id="confirmPopup" class="ui-popup">
+        <div class="ui-popup-content">
+            Execute: <br/>
+            <span id="confirmActionName"></span>
+        </div>
+        <div class="ui-popup-footer ui-side-button ui-grid-col-2">
+            <a id="cancel" href="#" class="ui-btn btn-icon-cancel" data-rel="back">Cancel</a>
+            <a id="confirm" href="#" class="ui-btn btn-icon-check">OK</a>
+        </div>
+    </div>
+
+    <div id="errorToast" class="ui-popup ui-popup-toast">
+        <div class="ui-popup-content">
+            An Unexpected Error Occurred
+        </div>
+    </div>
 </div>
 </body>
 </html>

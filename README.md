@@ -27,7 +27,7 @@ Currently there are 4 supported options. (examples published, you can make your 
 ## Dependencies
 
 - [JQuery](https://github.com/jquery/jquery) (because I couldn't figure out how to make TAU play nice with my first project)
-- [TAU (Tizen Advanced UI)](https://developer.tizen.org/dev-guide/2.3.1/org.tizen.web.apireference/html/ui_fw_api/mobile/index.htm)
+- [TAU (Tizen Advanced UI)](https://developer.tizen.org/dev-guide/2.4.0/)
 
 ## License Information
 

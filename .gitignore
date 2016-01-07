@@ -7,3 +7,5 @@
 .sdk_delta.info
 *.wgt
 .idea
+
+node_modules

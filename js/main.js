@@ -59,9 +59,6 @@ window.onload = function() {
 	$('body').on('click', 'a[data-event]', function() {
 		var event = $(this).data('event');
         var eventName = $(this).text();
-
-        console.log(eventName);
-		
 		var endpoint = IFTTT_URL.replace(/\{event\}/g, event);
 		endpoint = endpoint.replace(/\{key\}/g, iftttKey);
 

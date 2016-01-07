@@ -1,0 +1,24 @@
+{
+  "name": "estudu",
+  "version": "0.0.2",
+  "description": "Tizen Wearable App for issuing IFTTT commands to Maker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtgibbs/estudu.git"
+  },
+  "keywords": [
+    "tizen",
+    "wearable",
+    "ifttt"
+  ],
+  "author": "Matt Gibbs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtgibbs/estudu/issues"
+  },
+  "homepage": "https://github.com/mtgibbs/estudu#readme"
+}

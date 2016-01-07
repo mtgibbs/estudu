@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/mtgibbs/estudu/issues"
   },
-  "homepage": "https://github.com/mtgibbs/estudu#readme"
+  "homepage": "https://github.com/mtgibbs/estudu#readme",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "tizen-tau-wearable": "^2.3.1-0"
+  }
 }
